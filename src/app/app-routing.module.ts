@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'todo',
     component: TodoComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard'
   }
 ];
 
