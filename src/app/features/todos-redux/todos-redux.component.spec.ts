@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { TodoEntryComponent } from './todo-entry.component';
 
+import { TodosReduxComponent } from './todos-redux.component';
 
-describe('TodoEntryComponent', () => {
-  let component: TodoEntryComponent;
-  let fixture: ComponentFixture<TodoEntryComponent>;
+describe('TodosReduxComponent', () => {
+  let component: TodosReduxComponent;
+  let fixture: ComponentFixture<TodosReduxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoEntryComponent ]
+      declarations: [ TodosReduxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TodoEntryComponent);
+    fixture = TestBed.createComponent(TodosReduxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -6,17 +6,18 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./todo-entry.component.css']
 })
 export class TodoEntryComponent implements OnInit {
-@Output() itemAdded = new EventEmitter<string>();
+
+  @Output() itemAdded = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
   }
+
   addItem(item: HTMLInputElement) {
     console.log(item.value);
-    // add it to the list
+    // Add it to the list?? - I can't. Ask mom to do it.
     this.itemAdded.emit(item.value);
     item.value = '';
     item.focus();
   }
-
 }

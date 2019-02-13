@@ -1,9 +1,12 @@
+
+
 export interface TodoItem {
   id: string;
-description: string;
-completed: boolean;
+  description: string;
+  completed: boolean;
 }
-export interface TodoList {
 
+export interface TodoList {
   items: TodoItem[];
 }
+

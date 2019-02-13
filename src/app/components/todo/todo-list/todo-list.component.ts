@@ -9,12 +9,12 @@ import { TodoItem, TodoList } from '../models';
 export class TodoListComponent implements OnInit {
 
   @Input() list: TodoList;
-
   constructor() { }
 
   ngOnInit() {
   }
-markCompleted(item: TodoItem) {
-  item.completed = true;
-}
+
+  markCompleted(item: TodoItem) {
+    item.completed = true;
+  }
 }

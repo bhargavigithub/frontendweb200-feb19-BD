@@ -1,12 +1,16 @@
 <div class="container">
-<app-header [subheading]="sub"></app-header>
-<app-nav></app-nav>
 
-<!-- <input type = "button"
-      class="btn btn-sm btn-danger"
-      (click)="makeUpper()"
-      value = "click me"> -->
-      <section>
-        <router-outlet></router-outlet>
-      </section>
-    </div>
+    <app-header [subheading]="sub"></app-header>
+
+    <app-nav></app-nav>
+
+
+    <!-- <input type="button"
+           class="btn btn-sm btn-danger"
+           (click)="makeUpper()"
+           value="Click Me!"> -->
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+
+  </div>

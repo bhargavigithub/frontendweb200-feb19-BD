@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TodoComponent } from './components/todo/todo.component';
+import { TodosReduxComponent } from './features/todos-redux/todos-redux.component';
 
 const routes: Routes = [
   {
     path: 'dashboard',
-    component: TodoComponent
+    component: DashboardComponent
   },
   {
     path: 'todo',
     component: TodoComponent
   },
   {
+    path: 'todo-redux',
+    component: TodosReduxComponent
+  },
+  {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: 'dashboard  '
   }
 ];
 
